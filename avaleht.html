@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/avaleht.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+
+    <title>Avaleht</title>
+</head>
+<body>
+    <header>
+        <h1>We are #1</h1>
+    </header>
+    <nav>
+        <a href="avaleht.html">Avaleht</a>
+        <a href="tiimileht.html">Tiimileht</a>
+        <a href="kontaktileht.html">Kontaktileht</a>
+        <a href="https://github.com/hansm4543/">Repositoorium</a>
+    </nav>
+    <section>
+        <b><big>Lehekülgede funktsionaalsus</big></b>
+        <br>
+        <div class = "ylesandelist">
+            <span id="ylesanne1">1. Tekitasime pensionistaatuse kontrolli!</span>
+            <br>
+            <span id="ylesanne2">2. Sugu vahetades muutub ka tausta värv!</span>
+            <br>
+            <span id="ylesanne3">3. Lõime tiimilehe, kuhu lisasime meie lemmik video!</span>
+            <br>
+            <span id="ylesanne4">4. Lõime kontaktiinput lehe, mis kontrollib emaili ja telefoni nr õigsust!</span>
+            <br>
+            <span id="ylesanne5">5. Lehe üleval on nupud lehekülgede vahel sirvimiseks</span>
+
+        </div>
+        <br>
+        <b><big>Lahendusel tekkinud probleemid</big></b>
+        <br>
+        <div class = "raskusedlist">
+            <span id="raskus1">1. Algul oli probleem, kuidas koos lahendada saame!</span>
+            <br>
+            <span id="raskus2">2. Veebiproga oskustest jäi natuke puudu xd</span>
+            <br>
+            <span id="raskus3">3. Päris hea kogemus, kuna pidi palju googeldama ja katsetama!</span>
+        </div>
+    </section>
+
+    <div class="pensioncontainer">
+        <b><big>Pensioni staatuse kontroll</big></b>
+
+        <p>Palun valige oma sugu:</p>
+        <input type="radio" id="Genderchoice1"
+        name="gender" value="0" onchange="updatePensionStatus(document.getElementById('AgeID').value, this.value);" >
+        <label for="Genderchoice1">Mees</label>
+
+        <input type="radio" id="Genderchoice2"
+        name="gender" value="1" onchange="updatePensionStatus(document.getElementById('AgeID').value, this.value);" checked>
+        <label for="Genderchoice1">Naine</label>
+        
+        <br>
+        <p>Palun sisestage oma vanus:</p>
+
+        <input type="range" id="AgeID" value="24" min="1" max="100" oninput="this.nextElementSibling.value = this.value" onchange="updatePensionStatus(this.value, document.getElementById('Genderchoice2').value);">
+        <output>24</output>
+        <br>
+        <span id="pensionStatus"></span>
+        <br>
+    </div>
+
+
+    <script src="js/avaleht.js" defer></script>
+    
+</body>
+</html>

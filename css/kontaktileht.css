@@ -13,6 +13,7 @@ section form {
     padding: 20px 10px;
     margin-bottom: 20px;
     transition: 0.2s all;
+    overflow: hidden;
 }
 
 .passed {
@@ -24,6 +25,7 @@ section form {
     padding: 20px 10px;
     margin-bottom: 20px;
     transition: 0.2s all;
+    overflow: hidden;
 }
 
 form * {
@@ -69,6 +71,15 @@ iframe {
     height: 600px;
     border-radius: 10px;
     margin-bottom: 20px;
+}
+
+.contactInfoContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+    width: 95%;
 }
 
 @media only screen and (max-width: 800px) {

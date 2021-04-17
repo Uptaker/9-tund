@@ -57,6 +57,7 @@
 .video-container {
   display: block;
   text-align: center;
+  padding: 15px 150px;
 }
 
 .video {
@@ -77,6 +78,9 @@
     width:  450px;
     height: 450px;
   }
+  .video-container {
+    padding: 15px 75px;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -84,4 +88,8 @@
     width:  200px;
     height: 200px;
   }
+  .video-container {
+    padding: 15px;
+  }
+
 }

@@ -1,79 +1,15 @@
-body {
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(235, 235, 235);
-    justify-content: center;
-    align-items: center;
-    font-family: 'Roboto', sans-serif;
-
-}
-
-header h1 {
-    position: relative;
-    z-index: 9999;
-    font-size: 4vw;
-    color: rgb(37, 37, 37);
-    font-family: 'Kaushan Script', cursive;
-    text-shadow: 2px 2px 0px #4e4e4e, 
-        4px 4px 0px #7c7b7c, 
-        6px 6px 0px #b3b3b3, 
-        8px 8px 0px #e6e6e6;
-}
-
-section {
-    border-radius: 5px;
-    padding: 10px;
-    margin: 20px 0;
-    background-color:rgba(252, 245, 152, 0.856);
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border: 20px transparent white;
-    border-radius: 20px;
-}
 
 .pensioncontainer {
-    border-radius: 5px;
-    padding: 10px;
-    margin: 20px 0;
     background-color:lightpink;
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border: 20px transparent white;
-    border-radius: 20px;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-}
-
-nav a {
-    margin: 0 20px;
-    color: black;
-    border: 1px solid gray;
-    background-color: white;
-    padding: 10px 20px;
-    border-radius: 10px;
-    text-decoration: none;
-    transition: 0.3s all;
-    
-}
-
-nav a:hover {
-    background-color: rgb(207, 204, 204);
 }
 
 #pensionStatus{
     background-color: rgb(255, 255, 255);
     border: 1px transparent white;
     border-radius: 3px;
+}
+
+input[type="range"] {
+    border: none;
+    box-shadow: none;
 }
